@@ -56,6 +56,16 @@ body
     display: inline;
 }
 
+/* Not working >:( */ /*
+@media screen and (max-width: 900px)
+{
+    .navbar li
+    {
+        display: block;
+    }
+}
+*/
+
 .navbar a
 {
     text-decoration: none;
