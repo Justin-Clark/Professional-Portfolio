@@ -3,10 +3,14 @@
 
 *
 {
+    /* External Font */
+    font-family: 'Playfair Display', serif;
+}
+
+body
+{
     padding: 0;
     margin: 0;
-
-    font-family: 'Playfair Display', serif;
 }
 
 .container
@@ -18,7 +22,7 @@
     color: #2D3047;
 }
 
-/* .container .centerContainer */
+/* .centerContainer is child of .container */
 .centerContainer
 {
     margin: 0;
@@ -30,12 +34,21 @@
     letter-spacing: 1px;
 }
 
+.centerContainer h1
+{
+    text-shadow: 5px 5px 5px pink;
+}
+
 .navbar
 {
     text-align: center;
     list-style-type: none;
 
-    padding: 5px;
+    background-color: #2D3047;
+
+    overflow: hidden;
+
+    font-size: 1.5em;
 }
 
 .navbar li
@@ -46,12 +59,9 @@
 .navbar a
 {
     text-decoration: none;
-    color: #2D3047;
-    font-size: 1.5em;
-    display: inline-block;
-}
 
-#mid
-{
-    font-size: 3em;
+    padding: 10px 16px;
+    color: #419D78;
+
+    text-align: center;
 }
