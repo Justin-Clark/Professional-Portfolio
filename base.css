@@ -13,7 +13,7 @@ body
     margin: 0;
 }
 
-/* ===== Container/CenterContainer ===== */
+/* ===== Container ===== */
 
 .container
 {
@@ -24,7 +24,7 @@ body
     color: #2D3047;
 }
 
-/* .centerContainer is child of .container */
+/* ===== CenterContainer ===== */
 .centerContainer
 {
     margin: 0;
@@ -59,6 +59,13 @@ body
     text-decoration: none;
 }
 
+.centerContainer a
+{
+    text-decoration: none;
+
+    color: #419D78;
+}
+
 /* ===== NAVBAR ===== */
 
 .navbar
@@ -73,12 +80,21 @@ body
     font-size: 1.5em;
 }
 
+/* === Media Queries === */
+
 .navbar li
 {
     display: inline;
 }
 
-/* Not working >:( */ /*
+@media screen and (min-width: 950px)
+{
+    .navbar li
+    {
+        display: inline;
+    }
+}
+
 @media screen and (max-width: 900px)
 {
     .navbar li
@@ -86,7 +102,6 @@ body
         display: block;
     }
 }
-*/
 
 .navbar a
 {
@@ -106,4 +121,22 @@ body
 .navbar a:active
 {
     color: #419D78;
+}
+
+/* Miscellaneous Media Queries */
+
+@media screen and (min-width: 1440px)
+{
+    *
+    {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 2300px)
+{
+    *
+    {
+        font-size: 1.15em;
+    }
 }
