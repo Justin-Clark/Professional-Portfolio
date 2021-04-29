@@ -7,24 +7,33 @@
     font-family: 'Playfair Display', serif;
 }
 
-body
+html, body
 {
-    padding: 0;
-    margin: 0;
+    min-height: 100vh;
+}
+#root
+{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 /* ===== Container ===== */
 
 .container
 {
+    /*
     height: 97vh;
     position: relative;
     border: 4mm ridge #2D3047;
+    */
     background-color: #419D78;
+    /*
     color: #2D3047;
+    */
 }
 
-/* ===== CenterContainer ===== */
+/*
+
 .centerContainer
 {
     margin: 0;
@@ -66,41 +75,29 @@ body
     color: #419D78;
 }
 
-/* ===== NAVBAR ===== */
+*/
+
+/* ========== NAVBAR ========== */
 
 .navbar
 {
+    /*
     text-align: center;
     list-style-type: none;
+    */
 
     background-color: #2D3047;
 
+    /*
     overflow: hidden;
 
     font-size: 1.5em;
+    */
 }
 
-/* === Media Queries === */
-
-.navbar li
+.navbar+ul
 {
     display: inline;
-}
-
-@media screen and (min-width: 950px)
-{
-    .navbar li
-    {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 900px)
-{
-    .navbar li
-    {
-        display: block;
-    }
 }
 
 .navbar a
@@ -121,22 +118,4 @@ body
 .navbar a:active
 {
     color: #419D78;
-}
-
-/* Miscellaneous Media Queries */
-
-@media screen and (min-width: 1440px)
-{
-    *
-    {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (min-width: 2300px)
-{
-    *
-    {
-        font-size: 1.15em;
-    }
 }
