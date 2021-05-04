@@ -7,42 +7,65 @@
     font-family: 'Playfair Display', serif;
 }
 
-html, body
+body
 {
-    min-height: 100vh;
-}
-#root
-{
-    display: grid;
-    grid-template-columns: auto auto;
+    padding: 0;
+    margin: 0;
+
+    border: 4mm ridge #2D3047;
 }
 
-/* ===== Container ===== */
+/* ==========================
+        Center Container
+    =========================
+*/
 
 .container
 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 88.8vh;
+    background-color: #419D78;
+    color: #2D3047;
+    
     /*
+    
+    == NOT USING ==
+
     height: 97vh;
     position: relative;
     border: 4mm ridge #2D3047;
-    */
     background-color: #419D78;
-    /*
     color: #2D3047;
     */
 }
 
-/*
-
+/* .centerContainer is child of .container */
 .centerContainer
 {
+    /*
+
+    == NOT USING ==
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    */
+
     letter-spacing: 1px;
+
+    /* ====== */
+
+    padding: 10px;
+    border: 1px solid #2D3047;
+    box-shadow: -10px 5px 5px #2D3047;
+
+    flex: 0 1 50em;
 }
 
 .centerContainer p
@@ -66,36 +89,39 @@ html, body
     color: #419D78;
     padding: 10px 24px;
     text-decoration: none;
+
+    margin: 10px;
 }
 
 .centerContainer a
 {
     text-decoration: none;
-
     color: #419D78;
 }
 
-*/
+#second
+{
+    float: right;
+}
 
-/* ========== NAVBAR ========== */
+/* ==========================
+        NAVBAR
+    =========================
+*/
 
 .navbar
 {
-    /*
     text-align: center;
     list-style-type: none;
-    */
 
     background-color: #2D3047;
 
-    /*
     overflow: hidden;
 
     font-size: 1.5em;
-    */
 }
 
-.navbar+ul
+.navbar li
 {
     display: inline;
 }
@@ -110,12 +136,45 @@ html, body
     text-align: center;
 }
 
-.navbar a:hover
-{
-    color: white;
-}
+/* ==========================
+        MOBILE MEDIA QUERIES
+   ==========================
+*/
 
-.navbar a:active
+@media screen and (max-width: 900px)
 {
-    color: #419D78;
+    .navbar li
+    {
+        display: block;
+        padding: 5px;
+    }
+
+    .centerContainer button
+    {
+        display: inline;
+        float: none
+    }
+
+    .bottomButtons
+    {
+        display: -webkit-flex;
+        display: flex;
+
+        flex-flow: row wrap;
+
+        justify-content: center;
+    }
+
+    /* REMOVE ALL SPECIAL STYLES */
+
+    .centerContainer h1
+    {
+        text-shadow: none;
+    }
+
+    .centerContainer
+    {
+        box-shadow: none;
+        border: 3px solid #2D3047;
+    }
 }
