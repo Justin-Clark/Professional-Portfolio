@@ -13,6 +13,9 @@
         <!-- StyleSheets -->
         <link rel="stylesheet" href="./base.css">
 
+        <!-- Scripts -->
+        <script defer src="./contactModal.js"></script>
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -20,6 +23,38 @@
     </head>
 
     <body>
+
+        <div id="modal" class="Modal">
+            
+            <div class="Modal-Content">
+                
+                <span class="closeIco">&times;</span>
+                
+                <p>Modal Text</p>
+                
+                <form action="https://formspree.io/f/xbjqdwng" method="POST">
+                    
+                    <label>
+                        Your email:
+                        <br>
+                        <input type="email" name="_replyto" placeholder="example@email.com" required>
+                        <br>
+                    </label>
+                    
+                    <label>
+                        Your message:
+                        <br>
+                        <textarea name="message"></textarea>
+                        <br>
+                    </label>
+
+                    <button type="submit">Send</button>
+                
+                </form>
+            
+            </div>
+        
+        </div>
         
         <div class="navbar">
             <ul>
@@ -42,6 +77,10 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis at sapien condimentum vulputate. Vivamus convallis id diam sed aliquam. Duis rhoncus placerat odio ac fermentum. Morbi in porta velit. Phasellus ultricies libero sed libero commodo congue. In vitae eros ut erat dictum laoreet. Sed sit amet venenatis eros. Aliquam vitae purus nisl.
                 </p>
+
+                <hr>
+
+                <button id="contactBtn">Contact Me!</button>
             </div>
 
         </div>
