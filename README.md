@@ -35,10 +35,11 @@
             <button id="second" type="submit"><a href="./about.html">~ About ~</a></button>
         </div>
 
-        <a href="https://github.com/Justin-Clark" target="_blank"><i class="fab fa-github icons"></i></a>
+        <a href="https://github.com/Justin-Clark" target="_blank">
+            <i class="fab fa-github icons"></i></a>
         
         <a href="https://www.linkedin.com/in/justin-clark-913a281a9/" target="_blank">
-          <i class="fab fa-linkedin icons"></i></a>
+            <i class="fab fa-linkedin icons"></i></a>
       
     </div>
 </div>
