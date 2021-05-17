@@ -38,5 +38,4 @@
   </div>
 ```
 
-<img src="![index htmlmain](https://user-images.githubusercontent.com/70596384/118538121-69124a00-b713-11eb-816f-bf33c728e423.png)
-">
+<img src="![index htmlmain](https://user-images.githubusercontent.com/70596384/118538121-69124a00-b713-11eb-816f-bf33c728e423.png)">
