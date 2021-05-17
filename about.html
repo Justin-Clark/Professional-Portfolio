@@ -13,6 +13,9 @@
         <!-- StyleSheets -->
         <link rel="stylesheet" href="./base.css">
 
+        <!-- Scripts -->
+        <script defer src="./contactModal.js"></script>
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -20,6 +23,48 @@
     </head>
 
     <body>
+
+        <div id="modal" class="Modal">
+            
+            <div class="Modal-Content">
+                
+                <span class="closeIco">&times;</span>
+                
+                <p>Contact</p>
+                
+                <form action="https://formspree.io/f/xbjqdwng" method="POST">
+                    
+                    <h1>Contact Me</h1>
+
+                    <label>
+                        Your email:
+                        <br>
+                        <input type="email" name="_replyto" placeholder="example@email.com" autocomplete="off" required>
+                        <br>
+                    </label>
+                    
+                    <label>
+                        Your message:
+                        <br>
+                        <textarea name="message"></textarea>
+                        <br>
+                    </label>
+
+                    <button type="submit">Send</button>
+                
+                    <h1>My Info</h1>
+
+                    <em>Email: Justinclark001@icloud.com</em>
+
+                    <br><br>
+
+                    <em>Phone: (636) 312-9995</em>
+
+                </form>
+            
+            </div>
+        
+        </div>
         
         <div class="navbar">
             <ul>
@@ -39,9 +84,12 @@
 
                 <hr>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis at sapien condimentum vulputate. Vivamus convallis id diam sed aliquam. Duis rhoncus placerat odio ac fermentum. Morbi in porta velit. Phasellus ultricies libero sed libero commodo congue. In vitae eros ut erat dictum laoreet. Sed sit amet venenatis eros. Aliquam vitae purus nisl.
-                </p>
+                <p> I am a self-motivated indavidual that can always get things done on time. I believe that time management is a very important skill and should be taken seriously if you want to succeed. These such skills have developed in the lewis and clark school by using Github, Trello, and Google Colab.</p>
+                <p>I like to get things done as soon as I can and I don't like to put things off until later. My peers would describe me as a helpful, reliable person who always finds a way to help them.</p>
+
+                <hr>
+
+                <button id="contactBtn">Contact Me!</button>
             </div>
 
         </div>
