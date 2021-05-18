@@ -99,6 +99,20 @@ body
     color: #419D78;
 }
 
+.icons
+{
+    font-size: 1.2rem;
+    float: right;
+    padding: 5px 10px;
+
+    color:rgba(0, 0, 0, 1);
+}
+
+.centerContainer ul > li > b
+{
+    color: #454a75;
+}
+
 #second
 {
     float: right;
