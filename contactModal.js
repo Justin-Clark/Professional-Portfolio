@@ -6,7 +6,7 @@ var span = document.getElementsByClassName("closeIco")[0];
 
 btn.onclick = function()
 {
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
 span.onclick = function()

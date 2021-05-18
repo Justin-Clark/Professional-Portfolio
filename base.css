@@ -114,9 +114,13 @@ body
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height:100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .Modal-Content
@@ -125,13 +129,38 @@ body
     margin: 15px auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 30%;
+    height: 50%;
 }
 
 .Modal-Content form
 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+.Modal-Content button
+{
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #2D3047;
+    color: #419D78;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+}
+
+.Modal-Content input[type="email"]
+{
+    border: none;
+    padding: 7px 15px;
+}
+
+.Modal-Content input[type="email"]:focus
+{
+    transition: 0.2s;
+    border-radius: 5px;
+    border-bottom: 3px solid red;
 }
 
 .closeIco

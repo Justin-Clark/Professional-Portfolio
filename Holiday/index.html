@@ -1,0 +1,67 @@
+<!-- filename
+	Justin Clark
+	18/12/2003
+	
+	Update the page text with the number of days until Christmas-->
+	
+    <!DOCTYPE html>
+
+    <html>
+        <head>
+            
+            <link rel="stylesheet" href="./site.css" />
+
+        </head>
+    
+        <body onload="GetDaysTillChristmas()">
+            
+            <div class="container">
+                <table>
+                    
+                    <tr>
+                        <td>
+                            <h1 id="dayTxt">###</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Days until Christmas</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button><a href="../projects.html"> Back </a></button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <script>
+
+                //Get the dates for comparisons
+                var currentDate = new Date();
+                const christmasDate = new Date(currentDate.getFullYear(), 11, 25);
+
+                //Convert miliseconds to days
+                const miliToDay = 1000*60*60*24;
+
+                //Get the text objects from the HTML DOM
+                var daysText = document.getElementById("dayTxt");
+
+                function GetDaysTillChristmas()
+                {
+                    console.log(christmasDate);
+                    console.log(currentDate);
+                    var daysTill = Math.floor((christmasDate.getTime() - currentDate.getTime()) / miliToDay);
+                    console.log("Days till chrimbo: " + daysTill);
+                    daysText.innerHTML = daysTill;
+                }
+
+            </script>
+        
+        </body>
+    
+    </html>
